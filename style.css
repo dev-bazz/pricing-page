@@ -1,20 +1,161 @@
-/* Error: Expected expression.
- *    ,
- * 59 |                 margin-top: ;
- *    |                             ^
- *    '
- *   styles\components\_pricing.scss 59:29   @forward
- *   styles\components\_components.scss 2:1  @use
- *   styles\pages\_pricing.scss 1:1          @use
- *   styles\style.scss 2:1                   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a    \2577 \a 59 \2502                  margin-top: ;\d\a    \2502                              ^\a    \2575 \a   styles\\components\\_pricing.scss 59:29   @forward\a   styles\\components\\_components.scss 2:1  @use\a   styles\\pages\\_pricing.scss 1:1          @use\a   styles\\style.scss 2:1                   root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.pricing {
+  display: flex;
+  background-color: white;
+  margin-top: 2.5em;
+  justify-content: center;
+  flex: 1;
+  box-shadow: 0px 1px 2px 0px rgba(45, 54, 66, 0.0705882353), 0px 2px 4px 0px rgba(45, 54, 66, 0.0705882353);
+}
+.pricing__item {
+  padding: 1.5em;
+  border: 0.03125em solid #E4E4E4;
+  border-width: 0 0.03125rem;
+}
+.pricing__msg > * + * {
+  margin-top: 0.5em;
+}
+.pricing__msg--title {
+  font-family: Merriweather serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.pricing__msg--details {
+  color: #61666D;
+  font-size: 0.875rem;
+}
+.pricing__details {
+  font-size: 0.875rem;
+  margin-top: 2.5em;
+  margin-bottom: 1.625em;
+}
+.pricing__value {
+  margin-top: 1.5em;
+  font-weight: 700;
+  font-family: Merriweather;
+  align-items: flex-end;
+  display: flex;
+  gap: 0.25em;
+}
+.pricing__value .price {
+  font-size: 2.6875rem;
+}
+.pricing .cta {
+  text-decoration: none;
+  background-color: #F4364C;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-block: 0.75em;
+  border-radius: 0.25em;
+  color: white;
+}
+.pricing .features {
+  margin-top: 2em;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  max-width: 57.9375rem;
+  margin-inline: auto;
+  translate: 0 10.25em;
+}
+main h1 {
+  font-family: "Merriweather", serif;
+  font-size: 2.625rem;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+main h2 {
+  font-weight: 400;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.container {
+  background: radial-gradient(100% 100% at 100% 100%, #FFB140 0%, #FD3A5C 100%);
+  height: 62vh;
+}
+
+/*# sourceMappingURL=style.css.map */
