@@ -128,6 +128,10 @@ select {
 .pricing .features {
   margin-top: 2em;
 }
+.pricing .features ul {
+  background-color: aqua;
+  list-style-image: url(../../icons/check.svg);
+}
 
 body {
   font-family: "Open Sans", sans-serif;

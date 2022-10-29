@@ -57,5 +57,10 @@
         }
         .features{
                 margin-top: pixTOrem(32px) ;
+
+                ul{
+                        background-color: aqua;
+                        list-style-image: url(../);
+                }
         }
 }
