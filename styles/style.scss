@@ -1,2 +1,25 @@
 @use "./reset";
 @use "./pages/pricing";
+
+
+@media (max-width: 991.98px){
+        :root{
+                font-size: 12px
+        }
+}
+
+
+@media (max-width: 750.98px){
+        .pricing{
+                flex-flow: column wrap;
+                
+                gap: 1rem;
+                &__item{
+                        border-width: .5px;
+                }
+        }
+        .container{
+                min-height: 100%;
+                
+        }
+}

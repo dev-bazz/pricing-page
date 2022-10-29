@@ -6,6 +6,7 @@ body{
         // font-family: 'Merriweather', serif;
         font-family: 'Open Sans', sans-serif;
         
+        
 }
 
 main{
@@ -31,4 +32,5 @@ main{
 .container{
         background: radial-gradient(100% 100% at 100% 100%, #FFB140 0%, #FD3A5C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
         height: pixTOrem(694px,rem);
+        padding-inline: 1rem;
 }
