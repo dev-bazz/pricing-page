@@ -219,6 +219,7 @@ main h2 {
   display: flex;
   gap: 0.75em;
   align-items: flex-start;
+  font-size: 0.875rem;
 }
 .hi ::marker {
   content: "ddd";
