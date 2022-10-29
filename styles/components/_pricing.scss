@@ -60,7 +60,9 @@
 
                 ul{
                         background-color: aqua;
-                        list-style-image: url(../);
+                        ::before{
+                                content: " jjd";
+                        }
                 }
         }
 }

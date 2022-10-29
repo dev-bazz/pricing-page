@@ -23,11 +23,6 @@ dd, ul, ol {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul,
-ol {
-  list-style: none;
-}
-
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -130,7 +125,9 @@ select {
 }
 .pricing .features ul {
   background-color: aqua;
-  list-style-image: url(../../icons/check.svg);
+}
+.pricing .features ul ::before {
+  content: " jjd";
 }
 
 body {
@@ -159,7 +156,7 @@ main h2 {
 
 .container {
   background: radial-gradient(100% 100% at 100% 100%, #FFB140 0%, #FD3A5C 100%);
-  height: 62vh;
+  height: 43.375rem;
 }
 
 /*# sourceMappingURL=style.css.map */
