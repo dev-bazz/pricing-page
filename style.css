@@ -200,6 +200,9 @@ main h2 {
   .pricing__item {
     border-width: 0.5px;
   }
+  .pricing__details {
+    text-align: center;
+  }
   .container {
     min-height: 100%;
   }

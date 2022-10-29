@@ -17,6 +17,9 @@
                 &__item {
                         border-width: 0.5px;
                 }
+                &__details{
+                        text-align: center;
+                }
         }
         .container {
                 min-height: 100%;
@@ -30,6 +33,7 @@
         .pricing__value {
                justify-content: center;
         }
+        
 }
 
 .hi {
