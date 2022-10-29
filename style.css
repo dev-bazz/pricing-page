@@ -164,7 +164,8 @@ body {
 main {
   max-width: 57.9375rem;
   margin-inline: auto;
-  translate: 0 10.25em;
+  translate: 0 8.75em;
+  margin-bottom: 1.25em;
 }
 main h1 {
   font-family: "Merriweather", serif;
@@ -229,6 +230,10 @@ main h2 {
 }
 .hi img {
   padding-top: 0.5em;
+}
+
+.uu p {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

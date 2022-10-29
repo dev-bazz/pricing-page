@@ -12,7 +12,8 @@ body{
 main{
         max-width: pixTOrem(927px, rem);
         margin-inline: auto;
-        translate: 0 pixTOrem(164px) ;
+        translate: 0 pixTOrem(140px) ;
+        margin-bottom: pixTOrem(20px);
         h1{
                 font-family: 'Merriweather', serif;
                 font-size: pixTOrem(42px,rem);
