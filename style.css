@@ -209,6 +209,9 @@ main h2 {
   .pricing__msg--details {
     text-align: center;
   }
+  .pricing__value {
+    justify-content: center;
+  }
 }
 .hi {
   list-style: circle;

@@ -10,6 +10,7 @@
 
 @media (max-width: 750.98px) {
         .pricing {
+                
                 flex-flow: column wrap;
 
                 gap: 1rem;
@@ -25,6 +26,9 @@
         }
         .pricing__msg--details {
                 text-align: center;
+        }
+        .pricing__value {
+               justify-content: center;
         }
 }
 
