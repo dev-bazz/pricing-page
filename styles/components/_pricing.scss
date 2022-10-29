@@ -55,10 +55,32 @@
                 padding-block: pixTOrem(12px);
                 border-radius: pixTOrem(4px);
                 color: map-get($colors, "white");
+                margin-top: pixTOrem(40px);
+        }
+        .cta2{
+                text-decoration: none;
+                background-color: map-get($colors, "strawberry");
+                width: 100%;
+                display: block;
+                text-align: center;
+                padding-block: pixTOrem(12px);
+                border-radius: pixTOrem(4px);
+                color: map-get($colors, "white");
+                
         }
         .features {
                 margin-top: pixTOrem(32px);
                 position: relative;
+        }
+}
+
+.con{
+        margin-top: pixTOrem(20px);
+        margin-bottom: pixTOrem(8px);
+        
+        select{
+                width: 100%;
+                padding: pixTOrem(10px) pixTOrem(16px);
         }
 }
 

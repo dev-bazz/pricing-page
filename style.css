@@ -125,10 +125,30 @@ select {
   padding-block: 0.75em;
   border-radius: 0.25em;
   color: white;
+  margin-top: 2.5em;
+}
+.pricing .cta2 {
+  text-decoration: none;
+  background-color: #F4364C;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-block: 0.75em;
+  border-radius: 0.25em;
+  color: white;
 }
 .pricing .features {
   margin-top: 2em;
   position: relative;
+}
+
+.con {
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+}
+.con select {
+  width: 100%;
+  padding: 0.625em 1em;
 }
 
 .try {
