@@ -17,16 +17,17 @@ p,
 figure,
 blockquote,
 dl,
-dd, ol {
+dd, ul, ol {
   margin: 0;
   padding: 0;
 }
 
-ul {
-  padding: 1rem;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -127,9 +128,7 @@ select {
 }
 .pricing .features {
   margin-top: 2em;
-}
-.pricing .features ul {
-  list-style: armenian;
+  position: relative;
 }
 
 .try {
@@ -148,13 +147,13 @@ select {
   color: rgb(10, 10, 10);
 }
 .try p {
-  color: #5E5E5E;
+  color: #5e5e5e;
 }
 .try a {
   text-decoration: none;
   padding: 0.5em 1em;
-  border: 2px solid #C9C9C9;
-  color: #5E5E5E;
+  border: 2px solid #c9c9c9;
+  color: #5e5e5e;
   border-radius: 4px;
 }
 
@@ -204,6 +203,19 @@ main h2 {
   .container {
     min-height: 100%;
   }
+}
+.hi {
+  list-style: circle;
+  position: relative;
+  display: flex;
+  gap: 0.75em;
+  align-items: flex-start;
+}
+.hi ::marker {
+  content: "ddd";
+}
+.hi img {
+  padding-top: 0.5em;
 }
 
 /*# sourceMappingURL=style.css.map */

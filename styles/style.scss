@@ -1,25 +1,37 @@
 @use "./reset";
 @use "./pages/pricing";
+@use  "./utilities/utilities" as *;
 
-
-@media (max-width: 991.98px){
-        :root{
-                font-size: 12px
+@media (max-width: 991.98px) {
+        :root {
+                font-size: 12px;
         }
 }
 
-
-@media (max-width: 750.98px){
-        .pricing{
+@media (max-width: 750.98px) {
+        .pricing {
                 flex-flow: column wrap;
-                
+
                 gap: 1rem;
-                &__item{
-                        border-width: .5px;
+                &__item {
+                        border-width: 0.5px;
                 }
         }
-        .container{
+        .container {
                 min-height: 100%;
-                
+        }
+}
+
+.hi {
+        list-style: circle;
+        ::marker {
+                content: "ddd";
+        }
+        position: relative;
+        display: flex;
+        gap: pixTOrem(12px);
+        align-items: flex-start;
+        img{
+                padding-top: pixTOrem(8px);
         }
 }

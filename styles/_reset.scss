@@ -15,15 +15,16 @@ p,
 figure,
 blockquote,
 dl,
-dd ,  ol{
+dd , ul, ol{
         margin: 0;
         padding: 0;
 }
-ul{
-        padding: 1rem;
-}
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+        list-style: none;
+}
 
 /* Set core root defaults */
 html:focus-within {

@@ -57,12 +57,12 @@
         }
         .features {
                 margin-top: pixTOrem(32px);
-
-                ul {
-                       list-style: armenian;
-                }
+                position: relative;
         }
 }
+
+
+
 
 .try {
         display: flex;
@@ -74,23 +74,21 @@
         background-color: map-get($colors, "white");
         box-shadow: 0px 1px 2px 0px #2d364212, 0px 0px 4px 0px #2d364212, 0px 0px 8px 0px #2d364212,
                 0px 8px 12px 0px #2d36420a;
-                flex-wrap: wrap;
-
-                
+        flex-wrap: wrap;
 
         span {
                 font-weight: 600;
                 color: rgb(10, 10, 10);
         }
         p {
-                color: #5E5E5E
+                color: #5e5e5e;
         }
 
-        a{
+        a {
                 text-decoration: none;
                 padding: pixTOrem(8px) pixTOrem(16px);
-                border: 2px solid #C9C9C9;
-                color: #5E5E5E;
+                border: 2px solid #c9c9c9;
+                color: #5e5e5e;
                 border-radius: 4px;
         }
 }
