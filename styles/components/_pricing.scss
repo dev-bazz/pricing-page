@@ -4,7 +4,7 @@
         background-color: map-get($colors, "white");
         margin-top: pixTOrem(40px);
         justify-content: center;
-        flex: 1;
+        
         box-shadow: 0px 1px 2px 0px #2d364212, 0px 2px 4px 0px #2d364212;
         flex-flow: row column;
 
@@ -12,6 +12,7 @@
                 padding: pixTOrem(24px);
                 border: pixTOrem(0.5px) solid map-get($colors, "black_200");
                 border-width: 0 pixTOrem(0.5px, rem);
+                flex: 1;
         }
         &__msg {
                 & > * + * {
