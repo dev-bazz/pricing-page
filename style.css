@@ -203,6 +203,12 @@ main h2 {
   .container {
     min-height: 100%;
   }
+  .pricing__msg--title {
+    text-align: center;
+  }
+  .pricing__msg--details {
+    text-align: center;
+  }
 }
 .hi {
   list-style: circle;
