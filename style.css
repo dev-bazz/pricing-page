@@ -17,9 +17,13 @@ p,
 figure,
 blockquote,
 dl,
-dd, ul, ol {
+dd, ol {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  padding: 1rem;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -76,6 +80,7 @@ select {
   justify-content: center;
   flex: 1;
   box-shadow: 0px 1px 2px 0px rgba(45, 54, 66, 0.0705882353), 0px 2px 4px 0px rgba(45, 54, 66, 0.0705882353);
+  flex-flow: row column;
 }
 .pricing__item {
   padding: 1.5em;
