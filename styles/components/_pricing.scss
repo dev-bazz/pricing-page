@@ -13,35 +13,34 @@
                 border-width: 0 pixTOrem(0.5px, rem);
         }
         &__msg {
-                &> * + *{
+                & > * + * {
                         margin-top: pixTOrem(8px);
                 }
                 &--title {
                         font-family: Merriweather serif;
-                        font-size: pixTOrem(28px,rem);
+                        font-size: pixTOrem(28px, rem);
                         font-weight: 700;
-                        
                 }
-                &--details{
-                        color: map-get($colors, "text_default" );
-                        font-size: pixTOrem(14px,rem);
+                &--details {
+                        color: map-get($colors, "text_default");
+                        font-size: pixTOrem(14px, rem);
                 }
         }
-        &__details{
-                font-size: pixTOrem(14px,rem);
+        &__details {
+                font-size: pixTOrem(14px, rem);
                 margin-top: pixTOrem(40px);
                 margin-bottom: pixTOrem(26px);
         }
 
-        &__value{
+        &__value {
                 margin-top: pixTOrem(24px);
                 font-weight: 700;
                 font-family: Merriweather;
                 align-items: flex-end;
                 display: flex;
                 gap: pixTOrem(4px);
-                .price{
-                        font-size: pixTOrem(43px,rem);
+                .price {
+                        font-size: pixTOrem(43px, rem);
                 }
         }
 
@@ -55,14 +54,41 @@
                 border-radius: pixTOrem(4px);
                 color: map-get($colors, "white");
         }
-        .features{
-                margin-top: pixTOrem(32px) ;
+        .features {
+                margin-top: pixTOrem(32px);
 
-                ul{
-                        background-color: aqua;
-                        ::before{
-                                content: " jjd";
-                        }
+                ul {
+                       list-style: armenian;
                 }
+        }
+}
+
+.try {
+        display: flex;
+        gap: pixTOrem(32px);
+        justify-content: center;
+        margin-block: pixTOrem(24px);
+        padding-block: pixTOrem(40px);
+        padding-inline: pixTOrem(132px);
+        background-color: map-get($colors, "white");
+        box-shadow: 0px 1px 2px 0px #2d364212, 0px 0px 4px 0px #2d364212, 0px 0px 8px 0px #2d364212,
+                0px 8px 12px 0px #2d36420a;
+
+                
+
+        span {
+                font-weight: 600;
+                color: rgb(10, 10, 10);
+        }
+        p {
+                color: #5E5E5E
+        }
+
+        a{
+                text-decoration: none;
+                padding: pixTOrem(8px) pixTOrem(16px);
+                border: 2px solid #C9C9C9;
+                color: #5E5E5E;
+                border-radius: 4px;
         }
 }

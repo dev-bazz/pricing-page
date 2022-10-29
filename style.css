@@ -124,10 +124,32 @@ select {
   margin-top: 2em;
 }
 .pricing .features ul {
-  background-color: aqua;
+  list-style: armenian;
 }
-.pricing .features ul ::before {
-  content: " jjd";
+
+.try {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  margin-block: 1.5em;
+  padding-block: 2.5em;
+  padding-inline: 8.25em;
+  background-color: white;
+  box-shadow: 0px 1px 2px 0px rgba(45, 54, 66, 0.0705882353), 0px 0px 4px 0px rgba(45, 54, 66, 0.0705882353), 0px 0px 8px 0px rgba(45, 54, 66, 0.0705882353), 0px 8px 12px 0px rgba(45, 54, 66, 0.0392156863);
+}
+.try span {
+  font-weight: 600;
+  color: rgb(10, 10, 10);
+}
+.try p {
+  color: #5E5E5E;
+}
+.try a {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border: 2px solid #C9C9C9;
+  color: #5E5E5E;
+  border-radius: 4px;
 }
 
 body {
