@@ -3,6 +3,8 @@
         display: flex;
         background-color: map-get($colors, "white");
         margin-top: pixTOrem(40px);
+        justify-content: center;
+        flex: 1;
         box-shadow: 0px 1px 2px 0px #2d364212, 0px 2px 4px 0px #2d364212;
 
         &__item {
@@ -20,7 +22,29 @@
                         font-weight: 700;
                         
                 }
+                &--details{
+                        color: map-get($colors, "text_default" );
+                        font-size: pixTOrem(14px,rem);
+                }
         }
+        &__details{
+                font-size: pixTOrem(14px,rem);
+                margin-top: pixTOrem(40px);
+                margin-bottom: pixTOrem(26px);
+        }
+
+        &__value{
+                margin-top: pixTOrem(24px);
+                font-weight: 700;
+                font-family: Merriweather;
+                align-items: flex-end;
+                display: flex;
+                gap: pixTOrem(4px);
+                .price{
+                        font-size: pixTOrem(43px,rem);
+                }
+        }
+
         .cta {
                 text-decoration: none;
                 background-color: map-get($colors, "strawberry");
@@ -30,5 +54,8 @@
                 padding-block: pixTOrem(12px);
                 border-radius: pixTOrem(4px);
                 color: map-get($colors, "white");
+        }
+        .features{
+                margin-top: ;
         }
 }
