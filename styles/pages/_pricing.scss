@@ -1,7 +1,33 @@
-@use "../utilities/utilities";
+@use "../components/components" as *;
+@use "../utilities/utilities" as *;
 
 
 body{
         // font-family: 'Merriweather', serif;
         font-family: 'Open Sans', sans-serif;
+}
+
+main{
+        max-width: pixTOrem(927px, rem);
+        margin-inline: auto;
+        translate: 0 pixTOrem(164px) ;
+        h1{
+                font-family: 'Merriweather', serif;
+                font-size: pixTOrem(42px,rem);
+                color: map-get($colors, "white" );
+                font-weight: 700;
+                text-align: center;
+        }
+        h2{
+                font-weight: 400;
+                color: map-get($colors, "white" );
+                font-size: pixTOrem(16px,rem);
+                text-align: center;
+                margin-top: pixTOrem(24px);
+        }
+}
+
+.container{
+        background: radial-gradient(100% 100% at 100% 100%, #FFB140 0%, #FD3A5C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        height: 62vh;
 }

@@ -1,0 +1,34 @@
+@use "../utilities/utilities" as *;
+.pricing {
+        display: flex;
+        background-color: map-get($colors, "white");
+        margin-top: pixTOrem(40px);
+        box-shadow: 0px 1px 2px 0px #2d364212, 0px 2px 4px 0px #2d364212;
+
+        &__item {
+                padding: pixTOrem(24px);
+                border: pixTOrem(0.5px) solid map-get($colors, "black_200");
+                border-width: 0 pixTOrem(0.5px, rem);
+        }
+        &__msg {
+                &> * + *{
+                        margin-top: pixTOrem(8px);
+                }
+                &--title {
+                        font-family: Merriweather serif;
+                        font-size: pixTOrem(28px,rem);
+                        font-weight: 700;
+                        
+                }
+        }
+        .cta {
+                text-decoration: none;
+                background-color: map-get($colors, "strawberry");
+                width: 100%;
+                display: block;
+                text-align: center;
+                padding-block: pixTOrem(12px);
+                border-radius: pixTOrem(4px);
+                color: map-get($colors, "white");
+        }
+}
