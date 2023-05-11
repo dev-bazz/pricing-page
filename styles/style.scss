@@ -3,55 +3,53 @@
 @use "./utilities/utilities" as *;
 
 @media (max-width: 991.98px) {
-        :root {
-                font-size: 12px;
-        }
+	:root {
+		font-size: 12px;
+	}
 }
 
 @media (max-width: 750.98px) {
-        .pricing {
-                
-                flex-flow: column wrap;
+	.pricing {
+		flex-flow: column wrap;
 
-                gap: 1rem;
-                &__item {
-                        border-width: 0.5px;
-                }
-                &__details{
-                        text-align: center;
-                }
-        }
-        .container {
-                min-height: 100%;
-        }
-        .pricing__msg--title {
-                text-align: center;
-        }
-        .pricing__msg--details {
-                text-align: center;
-        }
-        .pricing__value {
-               justify-content: center;
-        }
-        
+		gap: 1rem;
+		&__item {
+			border-width: 0.5px;
+		}
+		&__details {
+			text-align: center;
+		}
+	}
+	.container-d {
+		min-height: 100%;
+	}
+	.pricing__msg--title {
+		text-align: center;
+	}
+	.pricing__msg--details {
+		text-align: center;
+	}
+	.pricing__value {
+		justify-content: center;
+	}
 }
 
 .hi {
-        list-style: circle;
-        ::marker {
-                content: "ddd";
-        }
-        position: relative;
-        display: flex;
-        gap: pixTOrem(12px);
-        align-items: flex-start;
-        img {
-                padding-top: pixTOrem(8px);
-        }
-        font-size: pixTOrem(14px,rem);
+	list-style: circle;
+	::marker {
+		content: "ddd";
+	}
+	position: relative;
+	display: flex;
+	gap: pixTOrem(12px);
+	align-items: flex-start;
+	img {
+		padding-top: pixTOrem(8px);
+	}
+	font-size: pixTOrem(14px, rem);
 }
-.uu{
-        p{
-                font-weight: 700;
-        }
+.uu {
+	p {
+		font-weight: 700;
+	}
 }

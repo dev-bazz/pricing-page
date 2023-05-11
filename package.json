@@ -3,6 +3,6 @@
     "sass": "^1.55.0"
   },
   "scripts": {
-    "watchSass":"sass -w styles/style.scss style.css"
+    "watchSass": "sass -w styles/style.scss style.css"
   }
 }
